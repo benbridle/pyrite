@@ -1,0 +1,19 @@
+name,examples
+Food: bread,Loaves of bread
+Food: eggs,Eggs
+Food: cereals,"Weet Bix, oats, cornflakes"
+Food: condiments,"Sauces, dressings, spices"
+Food: dairy,"Cheese, milk powder, butter"
+Food: fruit,Fresh fruit
+Food: vegetables,"Fresh vegetables, mushrooms"
+Food: meat,"Sausages, mince, chicken"
+Food: non-perish,"Flour, cans, frozen food"
+Food: snacks,"Crackers, biscuits, dips"
+Food: spreads,"Jam, margarine, marmite"
+Food: markets,"Fruits and veges from the markets"
+House consumables,"Toilet paper, shampoo"
+House items,"Pins, pots, furniture, utensils"
+Haircuts,"Haircuts"
+Services,"Postage, phone credit"
+Transport,"Flights, trains, buses"
+Healthcare,"Doctors, dentists, prescriptions"
