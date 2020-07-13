@@ -98,7 +98,7 @@ class Program:
     def draw_selected_week(self):
         time_window = silica.get_window("time")
         date_string_1 = datetime_tools.get_human_readable_string(self.time_pointer)
-        date_string_2 = datetime_tools.get_human_readable_string(self.time_pointer + datetime_tools.one_week_delta)
+        date_string_2 = datetime_tools.get_human_readable_string(datetime_tools.get_end_of_week(self.time_pointer))
         date_string = date_string_1 + " - " + date_string_2
         time_window.draw((0, 0), date_string.center(time_window.screen.width))
 
