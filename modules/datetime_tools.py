@@ -7,7 +7,7 @@ def get_start_of_week(date):
     return localize_datetime(dt)
 
 def get_end_of_week(date):
-    return get_start_of_week(date) + timedelta(days=7)
+    return get_start_of_week(date) + one_week_delta - timedelta(seconds=1)
 
 def is_within_period(date, start_date, end_date):
     return start_date <= date <= end_date
@@ -26,11 +26,11 @@ def get_human_readable_string(dt):
 def get_date_with_suffix(dt):
     date = dt.strftime("%e").strip()
     day_suffix = "th"
-    if date[-1] == "1":
+    if date[-1] == "1" and date != "11":
         day_suffix = "st"
-    if date[-1] == "2":
+    if date[-1] == "2" and date != "12":
         day_suffix = "nd"
-    if date[-1] == "3":
+    if date[-1] == "3" and date != "13":
         day_suffix = "rd"
     return date+day_suffix
 
